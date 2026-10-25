@@ -7,11 +7,11 @@ BaroDrop lets you open the folders of your other computers and copy files and fo
 - Windows and Mac (Apple silicon) app with a two-pane explorer
 - Your own Synology NAS is the meeting point. Files go directly between computers when possible, or through your NAS relay. **Files are never stored on the NAS or anywhere else.**
 - Pair your own computers once, then connect with one click
-- iPhone app: browse your computers, preview photos, videos and documents, and save files to the iPhone (it also approves access from outside)
+- iPhone app: browse your computers, preview photos, videos and documents, save files to the iPhone, send photos and files to a computer, and open the iPhone (its BaroDrop folder and photos) from a computer (it also approves access from outside)
 - Automatic, signed updates from this page
 - Korean and English (🌐 button at the top)
 
-This repository holds the **release files only** (the programs and update information), not the source code.
+This repository holds the **release files** (the programs and update information). The NAS part and the iPhone app come as files you install or build yourself.
 
 ## Download
 
@@ -22,6 +22,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 | Windows 10 / 11 (64-bit) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) |
+| iPhone (iOS 16+, build it yourself with Xcode) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — how: [INSTALL-IOS.md](INSTALL-IOS.md) |
 
 `latest.json` is the signed update information the app reads. You don't need to download it.
 
@@ -53,6 +54,9 @@ BaroDrop runs on your own NAS. Download `BaroDrop-NAS.zip`, follow [INSTALL-NAS.
 2. Choose which drives to share, and whether others may write to them.
 3. Pair your computers: **Make a pairing code** on one, enter it on the other.
 
+**iPhone**
+The iPhone app is not on the App Store: build it on a Mac with Xcode and a free or paid Apple ID, following [INSTALL-IOS.md](INSTALL-IOS.md). The authenticator (push approvals) needs a paid Apple developer account and your own push key.
+
 ## Updates
 
 The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**). When a new version is out it tells you what changed and asks: **Update now** or **Later**.
@@ -75,11 +79,11 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 - Windows, Mac(Apple 칩) 앱, 두 칸 탐색기
 - 내 시놀로지 NAS가 연결을 이어 줍니다. 가능하면 컴퓨터끼리 직접, 아니면 내 NAS 중계로 보냅니다. **파일은 NAS나 다른 곳에 저장되지 않습니다.**
 - 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결
-- 아이폰 앱: 내 컴퓨터 탐색, 사진·영상·문서 미리보기, 아이폰에 받기 (밖에서 접속 승인도 이 앱에서)
+- 아이폰 앱: 내 컴퓨터 탐색, 사진·영상·문서 미리보기, 아이폰에 받기, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기 (밖에서 접속 승인도 이 앱에서)
 - 이 페이지에서 서명된 자동 업데이트
 - 한국어와 영어 지원(맨 위 🌐 버튼)
 
-이 저장소에는 **배포 파일만**(프로그램과 업데이트 정보) 있고, 소스 코드는 없습니다.
+이 저장소에는 **배포 파일**(프로그램과 업데이트 정보)이 있습니다. NAS용과 아이폰 앱은 각자 설치·빌드하는 파일로 제공합니다.
 
 ## 내려받기
 
@@ -90,6 +94,7 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 | Windows 10 / 11 (64비트) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) |
+| 아이폰 (iOS 16 이상, Xcode로 직접 빌드) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — 방법: [INSTALL-IOS.md](INSTALL-IOS.md) |
 
 `latest.json` 은 앱이 읽는 서명된 업데이트 정보입니다. 받을 필요 없습니다.
 
@@ -120,6 +125,9 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 1. 에이전트를 처음 실행하면 내 바로드롭 주소를 묻습니다(브라우저로 여는 주소와 같음).
 2. 공유할 드라이브와 쓰기 허용 여부를 고릅니다.
 3. 컴퓨터끼리 등록: 한쪽에서 **연결 코드 만들기**, 다른 쪽에서 그 코드를 입력합니다.
+
+**아이폰**
+아이폰 앱은 앱 스토어에 없습니다. [INSTALL-IOS.md](INSTALL-IOS.md)대로 Mac의 Xcode와 Apple ID(무료 또는 유료)로 빌드해 설치하세요. 인증기(푸시 승인)는 유료 Apple 개발자 계정과 각자의 푸시 키가 필요합니다.
 
 ## 업데이트
 
