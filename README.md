@@ -1,1 +1,109 @@
-# barodrop-releases
+# BaroDrop
+
+**English** · [한국어](#바로드롭-한국어)
+
+BaroDrop lets you open the folders of your other computers and copy files and folders between them, straight from one disk to another, like using a two-pane file explorer.
+
+- Windows and Mac (Apple silicon) app with a two-pane explorer
+- Your own Synology NAS is the meeting point. Files go directly between computers when possible, or through your NAS relay. **Files are never stored on the NAS or anywhere else.**
+- Pair your own computers once, then connect with one click
+- Optional iPhone authenticator app for approving access from outside
+- Automatic, signed updates from this page
+- Korean and English (🌐 button at the top)
+
+This repository holds the **release files only** (the programs and update information), not the source code.
+
+## Download
+
+Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-releases/releases/latest)**:
+
+| Computer | File |
+|---|---|
+| Windows 10 / 11 (64-bit) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
+| Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
+
+`latest.json` is the signed update information the app reads. You don't need to download it.
+
+## Install
+
+**Windows**
+1. Run `BaroDropAgent-Windows.exe`. If Windows SmartScreen appears, choose **More info → Run anyway** (the app is not signed with a paid certificate).
+2. In the window, press **Install on this computer**. BaroDrop is added to the Start menu and the desktop.
+3. Microsoft Edge WebView2 is needed for the app window (built into Windows 11 and up-to-date Windows 10).
+
+**Mac**
+1. Unzip `BaroDropAgent-Mac.zip` and open **BaroDrop Agent**.
+2. If macOS says it cannot verify the developer: **System Settings → Privacy & Security → Open Anyway** (or right-click the app → Open).
+3. In the window, press **Install on this computer** to move it into Applications.
+
+**First setup**
+1. Enter your BaroDrop NAS address in the agent settings (the NAS needs the BaroDrop server).
+2. Choose which drives to share, and whether others may write to them.
+3. Pair your computers: **Make a pairing code** on one, enter it on the other.
+
+## Updates
+
+The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**) and installs a new version when copies and connections are done.
+Every release is signed. The app installs only updates whose signature matches the key built into it, so a changed or fake file is refused.
+
+Updating from versions before 1.0 (5.x–11.x): install 1.0 once by hand. From 1.0 on, updates come automatically.
+
+## Credits
+
+Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
+
+---
+
+## 바로드롭 (한국어)
+
+[English](#barodrop) · **한국어**
+
+바로드롭은 내 다른 컴퓨터의 폴더를 열고, 파일과 폴더를 디스크에서 디스크로 바로 복사하는 프로그램입니다. 좌우 두 칸 파일 탐색기처럼 씁니다.
+
+- Windows, Mac(Apple 칩) 앱, 두 칸 탐색기
+- 내 시놀로지 NAS가 연결을 이어 줍니다. 가능하면 컴퓨터끼리 직접, 아니면 내 NAS 중계로 보냅니다. **파일은 NAS나 다른 곳에 저장되지 않습니다.**
+- 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결
+- 밖에서 접속을 승인하는 아이폰 인증기 앱(선택)
+- 이 페이지에서 서명된 자동 업데이트
+- 한국어와 영어 지원(맨 위 🌐 버튼)
+
+이 저장소에는 **배포 파일만**(프로그램과 업데이트 정보) 있고, 소스 코드는 없습니다.
+
+## 내려받기
+
+**[Releases](https://github.com/hanidayo/barodrop-releases/releases/latest)** 에서 최신 버전을 받으세요.
+
+| 컴퓨터 | 파일 |
+|---|---|
+| Windows 10 / 11 (64비트) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
+| Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
+
+`latest.json` 은 앱이 읽는 서명된 업데이트 정보입니다. 받을 필요 없습니다.
+
+## 설치
+
+**Windows**
+1. `BaroDropAgent-Windows.exe` 를 실행합니다. Windows SmartScreen 창이 뜨면 **추가 정보 → 실행** 을 누르세요(유료 인증서로 서명하지 않은 앱이라 나옵니다).
+2. 창에서 **이 컴퓨터에 설치하기** 를 누르면 시작 메뉴와 바탕 화면에 바로드롭이 생깁니다.
+3. 앱 창에는 Microsoft Edge WebView2가 필요합니다(Windows 11과 최신 Windows 10에는 들어 있음).
+
+**Mac**
+1. `BaroDropAgent-Mac.zip` 을 풀고 **BaroDrop Agent** 를 엽니다.
+2. "개발자를 확인할 수 없습니다"가 나오면 **시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기** (또는 앱을 우클릭 → 열기).
+3. 창에서 **이 컴퓨터에 설치하기** 를 누르면 응용 프로그램 폴더로 옮겨집니다.
+
+**처음 설정**
+1. 에이전트 설정에 바로드롭 NAS 주소를 넣습니다(NAS에 바로드롭 서버가 있어야 합니다).
+2. 공유할 드라이브와 쓰기 허용 여부를 고릅니다.
+3. 컴퓨터끼리 등록: 한쪽에서 **연결 코드 만들기**, 다른 쪽에서 그 코드를 입력합니다.
+
+## 업데이트
+
+앱이 약 6시간마다 이 페이지를 확인하고(바로 하려면 **에이전트 설정 → 업데이트 → 업데이트 확인**), 복사와 연결이 끝나면 새 버전을 설치합니다.
+모든 배포 파일은 서명되어 있습니다. 앱은 안에 든 키와 서명이 맞는 업데이트만 설치하므로, 바뀌거나 가짜인 파일은 설치되지 않습니다.
+
+1.0 이전 버전(5.x–11.x)에서는 1.0을 한 번 직접 설치해 주세요. 1.0부터는 자동으로 업데이트됩니다.
+
+## 만든 사람
+
+제작 **Hanidayo**. [Claude](https://claude.ai)(Anthropic)를 이용해 만들었습니다.
