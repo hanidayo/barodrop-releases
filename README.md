@@ -7,7 +7,7 @@ BaroDrop lets you open the folders of your other computers and copy files and fo
 - Windows and Mac (Apple silicon) app with a two-pane explorer
 - Your own Synology NAS is the meeting point. Files go directly between computers when possible, or through your NAS relay. **Files are never stored on the NAS or anywhere else.**
 - Pair your own computers once, then connect with one click
-- Optional iPhone authenticator app for approving access from outside
+- iPhone app: browse your computers, preview photos, videos and documents, and save files to the iPhone (it also approves access from outside)
 - Automatic, signed updates from this page
 - Korean and English (🌐 button at the top)
 
@@ -50,10 +50,10 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 
 ## Updates
 
-The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**) and installs a new version when copies and connections are done.
+The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**). When a new version is out it tells you what changed and asks: **Update now** or **Later**.
 Every release is signed. The app installs only updates whose signature matches the key built into it, so a changed or fake file is refused.
 
-Versions before 1.0.2 cannot update from here: install the latest version once by hand. From 1.0.2 on, updates come automatically.
+Versions 1.0 and 1.0.1 cannot update from here: install the latest version once by hand. From 1.0.2 on, updates come automatically.
 
 ## Credits
 
@@ -70,7 +70,7 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 - Windows, Mac(Apple 칩) 앱, 두 칸 탐색기
 - 내 시놀로지 NAS가 연결을 이어 줍니다. 가능하면 컴퓨터끼리 직접, 아니면 내 NAS 중계로 보냅니다. **파일은 NAS나 다른 곳에 저장되지 않습니다.**
 - 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결
-- 밖에서 접속을 승인하는 아이폰 인증기 앱(선택)
+- 아이폰 앱: 내 컴퓨터 탐색, 사진·영상·문서 미리보기, 아이폰에 받기 (밖에서 접속 승인도 이 앱에서)
 - 이 페이지에서 서명된 자동 업데이트
 - 한국어와 영어 지원(맨 위 🌐 버튼)
 
@@ -113,10 +113,10 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 
 ## 업데이트
 
-앱이 약 6시간마다 이 페이지를 확인하고(바로 하려면 **에이전트 설정 → 업데이트 → 업데이트 확인**), 복사와 연결이 끝나면 새 버전을 설치합니다.
+앱이 약 6시간마다 이 페이지를 확인하고(바로 하려면 **에이전트 설정 → 업데이트 → 업데이트 확인**), 새 버전이 있으면 바뀐 내용을 보여 주고 **지금 업데이트** / **나중에** 를 묻습니다.
 모든 배포 파일은 서명되어 있습니다. 앱은 안에 든 키와 서명이 맞는 업데이트만 설치하므로, 바뀌거나 가짜인 파일은 설치되지 않습니다.
 
-1.0.2 이전 버전은 여기서 업데이트를 받지 못합니다. 최신 버전을 한 번 직접 설치해 주세요. 1.0.2부터는 자동으로 업데이트됩니다.
+1.0과 1.0.1은 여기서 업데이트를 받지 못합니다. 최신 버전을 한 번 직접 설치해 주세요. 1.0.2부터는 자동으로 업데이트됩니다.
 
 ## 만든 사람
 
