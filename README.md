@@ -21,13 +21,13 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 |---|---|
 | Windows 10 / 11 (64-bit) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
-| NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: `INSTALL-NAS.md` inside |
+| NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) |
 
 `latest.json` is the signed update information the app reads. You don't need to download it.
 
 ## Your NAS (once)
 
-BaroDrop runs on your own NAS. Download `BaroDrop-NAS.zip`, follow `INSTALL-NAS.md` inside: upload the files, copy `nas.env.example` to `.env` and set **three lines** (your address, a secret, the NAS's home address), then build it in Container Manager and set the reverse proxy and router ports. Nothing else to edit.
+BaroDrop runs on your own NAS. Download `BaroDrop-NAS.zip`, follow [INSTALL-NAS.md](INSTALL-NAS.md) (also inside the zip): upload the files, copy `nas.env.example` to `.env` and set **three lines** (your address, a secret, the NAS's home address), then build it in Container Manager and set the reverse proxy and router ports. Nothing else to edit.
 
 ## Install
 
@@ -89,13 +89,13 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 |---|---|
 | Windows 10 / 11 (64비트) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
-| NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: 안의 `INSTALL-NAS.md` |
+| NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) |
 
 `latest.json` 은 앱이 읽는 서명된 업데이트 정보입니다. 받을 필요 없습니다.
 
 ## 내 NAS (처음 한 번)
 
-바로드롭은 내 NAS에서 돌아갑니다. `BaroDrop-NAS.zip`을 받아 안의 `INSTALL-NAS.md`대로: 파일을 올리고, `nas.env.example`을 `.env`로 복사해 **세 줄**(내 주소, 비밀값, NAS 내부 IP)만 고친 뒤, Container Manager에서 빌드하고 역방향 프록시와 공유기 포트를 설정합니다. 다른 파일은 고칠 필요가 없습니다.
+바로드롭은 내 NAS에서 돌아갑니다. `BaroDrop-NAS.zip`을 받아 [INSTALL-NAS.md](INSTALL-NAS.md)(zip 안에도 있음)대로: 파일을 올리고, `nas.env.example`을 `.env`로 복사해 **세 줄**(내 주소, 비밀값, NAS 내부 IP)만 고친 뒤, Container Manager에서 빌드하고 역방향 프록시와 공유기 포트를 설정합니다. 다른 파일은 고칠 필요가 없습니다.
 
 ## 설치
 
