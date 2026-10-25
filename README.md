@@ -34,7 +34,14 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 **Mac**
 1. Unzip `BaroDropAgent-Mac.zip` and open **BaroDrop Agent**.
 2. If macOS says it cannot verify the developer: **System Settings → Privacy & Security → Open Anyway** (or right-click the app → Open).
-3. In the window, press **Install on this computer** to move it into Applications.
+3. If there is no **Open Anyway**, or macOS says the app **"is damaged and can't be opened"**, open **Terminal** (Applications → Utilities) and run this once:
+   ```
+   xattr -dr com.apple.quarantine ~/Downloads/"BaroDrop Agent.app"
+   ```
+   If the app is already in Applications: `xattr -dr com.apple.quarantine "/Applications/BaroDrop Agent.app"`.
+   (Or type `xattr -dr com.apple.quarantine ` with a space at the end, drag the app onto the Terminal window, and press Return.)
+   This removes the "downloaded from the internet" mark that macOS puts on apps without a paid Apple certificate.
+4. In the window, press **Install on this computer** to move it into Applications.
 
 **First setup**
 1. Enter your BaroDrop NAS address in the agent settings (the NAS needs the BaroDrop server).
@@ -45,6 +52,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 
 The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**) and installs a new version when copies and connections are done.
 Every release is signed. The app installs only updates whose signature matches the key built into it, so a changed or fake file is refused.
+
 
 ## Credits
 
@@ -88,7 +96,14 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 **Mac**
 1. `BaroDropAgent-Mac.zip` 을 풀고 **BaroDrop Agent** 를 엽니다.
 2. "개발자를 확인할 수 없습니다"가 나오면 **시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기** (또는 앱을 우클릭 → 열기).
-3. 창에서 **이 컴퓨터에 설치하기** 를 누르면 응용 프로그램 폴더로 옮겨집니다.
+3. **그래도 열기**가 없거나 **"손상되었기 때문에 열 수 없습니다"** 가 나오면, **터미널**(응용 프로그램 → 유틸리티)을 열고 한 번 실행하세요:
+   ```
+   xattr -dr com.apple.quarantine ~/Downloads/"BaroDrop Agent.app"
+   ```
+   이미 응용 프로그램 폴더에 있으면: `xattr -dr com.apple.quarantine "/Applications/BaroDrop Agent.app"`
+   (또는 `xattr -dr com.apple.quarantine ` 까지 입력(끝에 한 칸 띄우기)하고 앱을 터미널 창에 끌어다 놓은 뒤 Return)
+   유료 Apple 인증서가 없는 앱에 macOS가 붙이는 "인터넷에서 받음" 표시를 지우는 명령입니다.
+4. 창에서 **이 컴퓨터에 설치하기** 를 누르면 응용 프로그램 폴더로 옮겨집니다.
 
 **처음 설정**
 1. 에이전트 설정에 바로드롭 NAS 주소를 넣습니다(NAS에 바로드롭 서버가 있어야 합니다).
