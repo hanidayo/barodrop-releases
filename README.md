@@ -53,6 +53,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 The app checks this page about every 6 hours (or **Agent settings → Updates → Check for updates**) and installs a new version when copies and connections are done.
 Every release is signed. The app installs only updates whose signature matches the key built into it, so a changed or fake file is refused.
 
+Versions before 1.0.2 cannot update from here: install the latest version once by hand. From 1.0.2 on, updates come automatically.
 
 ## Credits
 
@@ -114,6 +115,8 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 
 앱이 약 6시간마다 이 페이지를 확인하고(바로 하려면 **에이전트 설정 → 업데이트 → 업데이트 확인**), 복사와 연결이 끝나면 새 버전을 설치합니다.
 모든 배포 파일은 서명되어 있습니다. 앱은 안에 든 키와 서명이 맞는 업데이트만 설치하므로, 바뀌거나 가짜인 파일은 설치되지 않습니다.
+
+1.0.2 이전 버전은 여기서 업데이트를 받지 못합니다. 최신 버전을 한 번 직접 설치해 주세요. 1.0.2부터는 자동으로 업데이트됩니다.
 
 ## 만든 사람
 
