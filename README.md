@@ -24,7 +24,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 | Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) |
 | iPhone (iOS 16+, build it yourself with Xcode) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — how: [INSTALL-IOS.md](INSTALL-IOS.md) |
-| Android (10+, build it yourself with Android Studio) | [BaroDrop-Android.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.zip) — how: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
+| Android (10+) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — how: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
 `latest.json` is the signed update information the app reads. You don't need to download it.
 
@@ -57,7 +57,7 @@ BaroDrop runs on your own NAS. Download `BaroDrop-NAS.zip`, follow [INSTALL-NAS.
 3. Pair your computers: **Make a pairing code** on one, enter it on the other.
 
 **iPhone / Android**
-The Android app is not on Google Play: build it with Android Studio following [INSTALL-ANDROID.md](INSTALL-ANDROID.md) and install the APK (no developer account needed).
+The Android app is not on Google Play: download `BaroDrop-Android.apk` and open it on the phone ([INSTALL-ANDROID.md](INSTALL-ANDROID.md)).
 The iPhone app is not on the App Store: build it on a Mac with Xcode and a free or paid Apple ID, following [INSTALL-IOS.md](INSTALL-IOS.md). The authenticator (push approvals) needs a paid Apple developer account and your own push key.
 
 ## Updates
@@ -99,7 +99,7 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 | Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) |
 | 아이폰 (iOS 16 이상, Xcode로 직접 빌드) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — 방법: [INSTALL-IOS.md](INSTALL-IOS.md) |
-| 안드로이드 (10 이상, Android Studio로 직접 빌드) | [BaroDrop-Android.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.zip) — 방법: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
+| 안드로이드 (10 이상) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — 방법: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
 `latest.json` 은 앱이 읽는 서명된 업데이트 정보입니다. 받을 필요 없습니다.
 
@@ -132,7 +132,7 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 3. 컴퓨터끼리 등록: 한쪽에서 **연결 코드 만들기**, 다른 쪽에서 그 코드를 입력합니다.
 
 **아이폰 / 안드로이드**
-안드로이드 앱은 Google Play에 없습니다. [INSTALL-ANDROID.md](INSTALL-ANDROID.md)대로 Android Studio로 빌드해 APK를 설치하세요(개발자 계정 불필요).
+안드로이드 앱은 Google Play에 없습니다. `BaroDrop-Android.apk`를 받아 휴대폰에서 열면 설치됩니다([INSTALL-ANDROID.md](INSTALL-ANDROID.md)).
 아이폰 앱은 앱 스토어에 없습니다. [INSTALL-IOS.md](INSTALL-IOS.md)대로 Mac의 Xcode와 Apple ID(무료 또는 유료)로 빌드해 설치하세요. 인증기(푸시 승인)는 유료 Apple 개발자 계정과 각자의 푸시 키가 필요합니다.
 
 ## 업데이트
