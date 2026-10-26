@@ -4,14 +4,14 @@
 
 The iPhone app is not on the App Store. `BaroDrop-iOS.zip` holds its Xcode project: build it on your Mac and install it on your iPhone.
 
-What the app does: browse your computers, preview and save files to the iPhone, play videos while they arrive, send photos and files to a computer, open the iPhone (its BaroDrop folder and photos) from a computer, and (optionally) approve access from outside as the authenticator.
+What the app does: browse your computers (with picture thumbnails), preview and save files to the iPhone, play videos while they arrive, send photos and files to a computer, open the iPhone (its BaroDrop folder and photos) from a computer, and (optionally) approve access from outside as the authenticator.
 
 ## You need
 
 - A Mac with **Xcode** (App Store, free). Open it once after installing.
 - An iPhone with **iOS 16** or later, and a USB cable.
 - An **Apple ID**. A free one works, with limits (below). A paid Apple Developer Program membership ($99/year) removes them.
-- **BaroDrop on your NAS, version 1.3 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
+- **BaroDrop on your NAS, version 1.4 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
 
 | | Free Apple ID | Paid developer account |
 |---|---|---|
@@ -55,14 +55,14 @@ Never share your push key or signing certificate.
 
 아이폰 앱은 앱 스토어에 없습니다. `BaroDrop-iOS.zip`에 Xcode 프로젝트가 들어 있으니 각자 Mac에서 빌드해 아이폰에 설치하세요.
 
-앱으로 하는 일: 내 컴퓨터 탐색, 미리보기·아이폰에 받기, 영상 받으면서 재생, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기, (선택) 인증기로 밖에서 접속 승인.
+앱으로 하는 일: 내 컴퓨터 탐색(사진 썸네일), 미리보기·아이폰에 받기, 영상 받으면서 재생, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기, (선택) 인증기로 밖에서 접속 승인.
 
 ## 준비물
 
 - **Xcode**가 설치된 Mac(앱 스토어, 무료). 설치 후 한 번 실행하세요.
 - **iOS 16** 이상 아이폰과 USB 케이블
 - **Apple ID**. 무료 계정도 되지만 제한이 있습니다(아래). 유료 Apple Developer Program(연 $99)이면 제한이 없습니다.
-- **내 NAS의 바로드롭 1.3 이상**([INSTALL-NAS.md](INSTALL-NAS.md))과 컴퓨터의 PC 에이전트
+- **내 NAS의 바로드롭 1.4 이상**([INSTALL-NAS.md](INSTALL-NAS.md))과 컴퓨터의 PC 에이전트
 
 | | 무료 Apple ID | 유료 개발자 계정 |
 |---|---|---|
