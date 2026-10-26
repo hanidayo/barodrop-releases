@@ -4,12 +4,12 @@
 
 The Android app is not on Google Play. Download **`BaroDrop-Android.apk`** from the [latest release](https://github.com/hanidayo/barodrop-releases/releases/latest) and install it on your phone. No account is needed.
 
-What the app does: browse your computers (with thumbnails), preview files and save them to the phone (`Download/BaroDrop`), send photos and files to a computer (also from other apps' Share button), and let a computer open the phone (its BaroDrop folder and the internal storage).
+What the app does: two panes like on a computer (the phone and the computer; long-press a file and drag it to the other pane to copy it), browse your computers (with thumbnails), preview files and save them to the phone (`Download/BaroDrop`), send photos and files to a computer (also from other apps' Share button), and let a computer open the phone (its BaroDrop folder and the internal storage).
 
 ## You need
 
 - An Android phone or tablet with **Android 10** or later.
-- **BaroDrop on your NAS, version 1.6 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
+- **BaroDrop on your NAS, version 1.7 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
 
 ## Install
 
@@ -41,12 +41,12 @@ Updates: install the newer `BaroDrop-Android.apk` over the old one. All releases
 
 안드로이드 앱은 Google Play에 없습니다. [최신 릴리스](https://github.com/hanidayo/barodrop-releases/releases/latest)에서 **`BaroDrop-Android.apk`**를 받아 휴대폰에 설치하세요. 계정은 필요 없습니다.
 
-앱으로 하는 일: 내 컴퓨터 탐색(썸네일), 미리보기·휴대폰에 받기(`Download/BaroDrop`), 사진·파일을 컴퓨터로 보내기(다른 앱의 공유 버튼으로도), 컴퓨터에서 휴대폰 열기(받은 파일 폴더·내장 저장공간).
+앱으로 하는 일: 컴퓨터처럼 두 칸(휴대폰 · 컴퓨터, 파일을 길게 눌러 다른 칸으로 끌어 놓으면 복사), 내 컴퓨터 탐색(썸네일), 미리보기·휴대폰에 받기(`Download/BaroDrop`), 사진·파일을 컴퓨터로 보내기(다른 앱의 공유 버튼으로도), 컴퓨터에서 휴대폰 열기(받은 파일 폴더·내장 저장공간).
 
 ## 준비물
 
 - **Android 10** 이상 휴대폰이나 태블릿
-- **내 NAS의 바로드롭 1.6 이상**([INSTALL-NAS.md](INSTALL-NAS.md))과 컴퓨터의 PC 에이전트
+- **내 NAS의 바로드롭 1.7 이상**([INSTALL-NAS.md](INSTALL-NAS.md))과 컴퓨터의 PC 에이전트
 
 ## 설치
 

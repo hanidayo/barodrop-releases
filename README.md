@@ -6,9 +6,9 @@ BaroDrop lets you open the folders of your other computers and copy files and fo
 
 - Windows and Mac (Apple silicon) app with a two-pane explorer, list or large icons with picture thumbnails
 - Your own Synology NAS is the meeting point. Files go directly between computers when possible, or through your NAS relay. **Files are never stored on the NAS or anywhere else.**
-- Pair your own computers once, then connect with one click
+- Pair your own computers once, then connect with one click (and open the other one back from the bar that appears)
 - iPhone app: browse your computers, preview photos, videos and documents, save files to the iPhone, send photos and files to a computer, and open the iPhone (its BaroDrop folder and photos) from a computer (it also approves access from outside)
-- Android app: the same, except the authenticator and video streaming
+- Android app: the same, except the authenticator and video streaming, with two panes like a computer (long-press a file and drag it across to copy)
 - Automatic, signed updates from this page
 - Korean and English (🌐 button at the top)
 
@@ -81,9 +81,9 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 
 - Windows, Mac(Apple 칩) 앱, 두 칸 탐색기 (목록 또는 사진 썸네일이 보이는 큰 아이콘)
 - 내 시놀로지 NAS가 연결을 이어 줍니다. 가능하면 컴퓨터끼리 직접, 아니면 내 NAS 중계로 보냅니다. **파일은 NAS나 다른 곳에 저장되지 않습니다.**
-- 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결
+- 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결(연결해 온 컴퓨터도 나타나는 [열기]로 거꾸로 열기)
 - 아이폰 앱: 내 컴퓨터 탐색, 사진·영상·문서 미리보기, 아이폰에 받기, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기 (밖에서 접속 승인도 이 앱에서)
-- 안드로이드 앱: 인증기와 영상 바로 재생을 뺀 같은 기능
+- 안드로이드 앱: 인증기와 영상 바로 재생을 뺀 같은 기능, 컴퓨터처럼 두 칸 화면(파일을 길게 눌러 끌어 놓으면 복사)
 - 이 페이지에서 서명된 자동 업데이트
 - 한국어와 영어 지원(맨 위 🌐 버튼)
 
