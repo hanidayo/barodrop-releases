@@ -4,7 +4,7 @@
 
 BaroDrop lets you open the folders of your other computers and copy files and folders between them, straight from one disk to another, like using a two-pane file explorer.
 
-- Windows and Mac (Apple silicon) app with a two-pane explorer
+- Windows and Mac (Apple silicon) app with a two-pane explorer, list or large icons with picture thumbnails
 - Your own Synology NAS is the meeting point. Files go directly between computers when possible, or through your NAS relay. **Files are never stored on the NAS or anywhere else.**
 - Pair your own computers once, then connect with one click
 - iPhone app: browse your computers, preview photos, videos and documents, save files to the iPhone, send photos and files to a computer, and open the iPhone (its BaroDrop folder and photos) from a computer (it also approves access from outside)
@@ -76,7 +76,7 @@ Made by **Hanidayo**. Built with [Claude](https://claude.ai) (Anthropic).
 
 바로드롭은 내 다른 컴퓨터의 폴더를 열고, 파일과 폴더를 디스크에서 디스크로 바로 복사하는 프로그램입니다. 좌우 두 칸 파일 탐색기처럼 씁니다.
 
-- Windows, Mac(Apple 칩) 앱, 두 칸 탐색기
+- Windows, Mac(Apple 칩) 앱, 두 칸 탐색기 (목록 또는 사진 썸네일이 보이는 큰 아이콘)
 - 내 시놀로지 NAS가 연결을 이어 줍니다. 가능하면 컴퓨터끼리 직접, 아니면 내 NAS 중계로 보냅니다. **파일은 NAS나 다른 곳에 저장되지 않습니다.**
 - 내 컴퓨터끼리 한 번 등록하면 다음부터 한 번에 연결
 - 아이폰 앱: 내 컴퓨터 탐색, 사진·영상·문서 미리보기, 아이폰에 받기, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기 (밖에서 접속 승인도 이 앱에서)
