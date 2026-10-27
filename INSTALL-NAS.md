@@ -1,66 +1,6 @@
-# BaroDrop on your NAS (Synology)
+# 내 NAS에 바로드롭 설치 (시놀로지)
 
-**English** · [한국어](#내-nas에-바로드롭-설치-시놀로지)
-
-BaroDrop's NAS part shows the BaroDrop page, connects your devices and relays when they cannot reach each other directly. **It never stores your files.** Tested with Synology DSM 7 + Container Manager.
-
-## What you need
-
-- A Synology NAS with **Container Manager** (Package Center)
-- An address for your NAS from outside, e.g. Synology DDNS `mynas.synology.me` (DSM Control Panel → External Access → DDNS) and its certificate (Let's Encrypt, Control Panel → Security → Certificate)
-- Access to your router's port forwarding
-
-## 1. Files
-
-1. Download `BaroDrop-NAS-vX.Y.zip` from [Releases](https://github.com/hanidayo/barodrop-releases/releases/latest) and unzip it.
-2. In File Station, create the folder `docker/barodrop` and upload everything inside the `BaroDrop` folder into it.
-3. Copy `nas.env.example` to **`.env`** in the same folder and edit **three lines** (that is the only file you change):
-
-| Line | Example | What it is |
-|---|---|---|
-| `PUBLIC_URL` | `https://mynas.synology.me:8443` | Your BaroDrop address (what you open in the browser) |
-| `TURN_SECRET` | 32+ random characters | Shared by BaroDrop and its TURN server |
-| `NAS_LAN_IP` | `192.168.0.10` | The NAS's home-network address (Control Panel → Network → Network Interface). Reserve it in your router. |
-
-## 2. Run
-
-Container Manager → **Project → Create** → name `barodrop`, path `docker/barodrop`, use the existing `compose.yaml` → build and start. Two containers start: `barodrop` and `coturn`.
-
-## 3. Reverse proxy (DSM)
-
-Control Panel → Login Portal → Advanced → **Reverse Proxy → Create**:
-
-| | Source | Destination |
-|---|---|---|
-| Protocol | HTTPS | HTTP |
-| Host name | `mynas.synology.me` (your name) | `127.0.0.1` |
-| Port | `8443` (the port in PUBLIC_URL) | `8787` |
-
-Then **Custom Header → Create → WebSocket** (adds Upgrade and Connection) → Save. Required for PC agents.
-Pick the certificate for this name in Control Panel → Security → Certificate → Settings.
-
-## 4. Router ports (to the NAS's address)
-
-- TCP **8443** (the BaroDrop port in PUBLIC_URL)
-- TCP and UDP **3478**, UDP **49160–49200** (TURN relay)
-
-Do **not** forward 8787 or 8790. If DSM's firewall is on, allow the same ports.
-
-## 5. Admin page and first use
-
-- Admin page (home network only): `http://<NAS_LAN_IP>:8790`. The first-time code is in Container Manager → barodrop container → **Log** (`BaroDrop 관리자 최초 설정 코드`).
-- Install the PC agent on each computer (BaroDrop page → Settings → Get the PC agent, or from Releases), and enter your BaroDrop address when it asks.
-- Pair your computers: **Make a pairing code** on one agent, enter it on the other.
-
-## Updating
-
-Download the new NAS zip, upload it over the old files (keep `.env`), then Container Manager → project → Stop → Build → Start. Your devices are kept (`device_data` volume). The admin page tells you when a newer version is on GitHub. PC agents update themselves from GitHub.
-
----
-
-## 내 NAS에 바로드롭 설치 (시놀로지)
-
-[English](#barodrop-on-your-nas-synology) · **한국어**
+**한국어** · [English](#barodrop-on-your-nas-synology)
 
 바로드롭의 NAS 부분은 바로드롭 화면을 보여 주고, 기기들을 연결해 주고, 직접 연결이 안 될 때 중계합니다. **파일은 NAS에 저장하지 않습니다.** 시놀로지 DSM 7 + Container Manager 기준입니다.
 
@@ -115,5 +55,65 @@ Container Manager → **프로젝트 → 생성** → 이름 `barodrop`, 경로 
 ## 업데이트
 
 새 NAS ZIP을 받아 기존 파일 위에 올리고(`.env`는 그대로), Container Manager → 프로젝트 → 중지 → 빌드 → 시작. 등록한 기기는 유지됩니다(`device_data` 볼륨). GitHub에 새 버전이 있으면 관리자 화면에 표시됩니다. PC 에이전트는 GitHub에서 스스로 업데이트됩니다.
+
+---
+
+## BaroDrop on your NAS (Synology)
+
+[한국어](#내-nas에-바로드롭-설치-시놀로지) · **English**
+
+BaroDrop's NAS part shows the BaroDrop page, connects your devices and relays when they cannot reach each other directly. **It never stores your files.** Tested with Synology DSM 7 + Container Manager.
+
+## What you need
+
+- A Synology NAS with **Container Manager** (Package Center)
+- An address for your NAS from outside, e.g. Synology DDNS `mynas.synology.me` (DSM Control Panel → External Access → DDNS) and its certificate (Let's Encrypt, Control Panel → Security → Certificate)
+- Access to your router's port forwarding
+
+## 1. Files
+
+1. Download `BaroDrop-NAS-vX.Y.zip` from [Releases](https://github.com/hanidayo/barodrop-releases/releases/latest) and unzip it.
+2. In File Station, create the folder `docker/barodrop` and upload everything inside the `BaroDrop` folder into it.
+3. Copy `nas.env.example` to **`.env`** in the same folder and edit **three lines** (that is the only file you change):
+
+| Line | Example | What it is |
+|---|---|---|
+| `PUBLIC_URL` | `https://mynas.synology.me:8443` | Your BaroDrop address (what you open in the browser) |
+| `TURN_SECRET` | 32+ random characters | Shared by BaroDrop and its TURN server |
+| `NAS_LAN_IP` | `192.168.0.10` | The NAS's home-network address (Control Panel → Network → Network Interface). Reserve it in your router. |
+
+## 2. Run
+
+Container Manager → **Project → Create** → name `barodrop`, path `docker/barodrop`, use the existing `compose.yaml` → build and start. Two containers start: `barodrop` and `coturn`.
+
+## 3. Reverse proxy (DSM)
+
+Control Panel → Login Portal → Advanced → **Reverse Proxy → Create**:
+
+| | Source | Destination |
+|---|---|---|
+| Protocol | HTTPS | HTTP |
+| Host name | `mynas.synology.me` (your name) | `127.0.0.1` |
+| Port | `8443` (the port in PUBLIC_URL) | `8787` |
+
+Then **Custom Header → Create → WebSocket** (adds Upgrade and Connection) → Save. Required for PC agents.
+Pick the certificate for this name in Control Panel → Security → Certificate → Settings.
+
+## 4. Router ports (to the NAS's address)
+
+- TCP **8443** (the BaroDrop port in PUBLIC_URL)
+- TCP and UDP **3478**, UDP **49160–49200** (TURN relay)
+
+Do **not** forward 8787 or 8790. If DSM's firewall is on, allow the same ports.
+
+## 5. Admin page and first use
+
+- Admin page (home network only): `http://<NAS_LAN_IP>:8790`. The first-time code is in Container Manager → barodrop container → **Log** (`BaroDrop 관리자 최초 설정 코드`).
+- Install the PC agent on each computer (BaroDrop page → Settings → Get the PC agent, or from Releases), and enter your BaroDrop address when it asks.
+- Pair your computers: **Make a pairing code** on one agent, enter it on the other.
+
+## Updating
+
+Download the new NAS zip, upload it over the old files (keep `.env`), then Container Manager → project → Stop → Build → Start. Your devices are kept (`device_data` volume). The admin page tells you when a newer version is on GitHub. PC agents update themselves from GitHub.
 
 Made by Hanidayo · Built with Claude

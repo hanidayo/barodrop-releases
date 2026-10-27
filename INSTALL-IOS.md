@@ -1,57 +1,6 @@
-# BaroDrop iPhone app — build it yourself
+# 바로드롭 아이폰 앱 — 직접 빌드하기
 
-**English** · [한국어](#바로드롭-아이폰-앱--직접-빌드하기)
-
-The iPhone app is not on the App Store. `BaroDrop-iOS.zip` holds its Xcode project: build it on your Mac and install it on your iPhone.
-
-What the app does: browse your computers (with picture thumbnails), preview and save files to the iPhone, play videos while they arrive, send photos and files to a computer, open the iPhone (its BaroDrop folder and photos) from a computer, and (optionally) approve access from outside as the authenticator.
-
-## You need
-
-- A Mac with **Xcode** (App Store, free). Open it once after installing.
-- An iPhone with **iOS 16** or later, and a USB cable.
-- An **Apple ID**. A free one works, with limits (below). A paid Apple Developer Program membership ($99/year) removes them.
-- **BaroDrop on your NAS, version 1.4 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
-
-| | Free Apple ID | Paid developer account |
-|---|---|---|
-| Browse, receive, send, open the iPhone from a computer | ✅ | ✅ |
-| App keeps working | 7 days, then build and install again | 1 year |
-| Authenticator push notifications | ❌ | ✅ (with your own push key on the NAS) |
-
-## Build and install
-
-1. Unzip `BaroDrop-iOS.zip` and open `ios/BaroDropAuth.xcodeproj` in Xcode.
-2. Xcode → **Settings → Accounts**: add your Apple ID.
-3. In the left column click **BaroDropAuth** (blue icon) → target **BaroDropAuth** → tab **Signing & Capabilities**:
-   - **Team**: choose your team (your name, "Personal Team" for a free account).
-   - **Bundle Identifier**: change `com.barodrop.auth` to your own unique ID, for example `com.yourname.barodrop`. (The original ID belongs to the author's account and cannot be used.)
-   - **Free Apple ID only**: delete the **Push Notifications** capability (the trash/✕ next to it). Free accounts cannot sign apps with it.
-4. Connect the iPhone with the cable and unlock it. Tap **Trust** if asked. Choose the iPhone at the top of the Xcode window.
-5. On the iPhone, turn on **Settings → Privacy & Security → Developer Mode** (it appears after the iPhone is connected to Xcode once) and restart when asked.
-6. Press **▶ (Run)** in Xcode. The first build takes a few minutes.
-7. If the iPhone says "Untrusted Developer": **Settings → General → VPN & Device Management** → your Apple ID → **Trust**. Then open the app.
-
-With a free Apple ID, repeat step 6 every 7 days (when the app stops opening).
-
-## First use
-
-1. Tab **Browse**: enter your BaroDrop address (the same address you open in the browser on your computers).
-2. **＋ Add computer** → on the computer: agent settings (tray / menu bar icon) → **Make a pairing code** → enter the 8-character code on the iPhone → approve on the computer.
-3. Tap **Connect** next to the computer. Allow **Local Network** when asked (direct link on the same Wi-Fi).
-4. Send to a computer: open the folder on the computer, then **＋ Send from iPhone**. Open the iPhone from a computer: keep the app open; it appears in **My devices** on the computer as "iPhone · app open".
-
-## Authenticator (optional, paid account)
-
-The authenticator approves new devices and access from outside, with a push notification. It needs your own Apple push key:
-Apple Developer → **Keys** → new key with **Apple Push Notifications service (APNs)** → put `AuthKey.p8` in the NAS's `apns` folder and set `APNS_KEY_ID`, `APNS_TEAM_ID` and `APNS_TOPIC` (= your Bundle Identifier) in `.env`, then rebuild the NAS. In the app: **Settings → Advanced → Use this iPhone as the authenticator**, and scan the QR from the NAS admin page.
-Never share your push key or signing certificate.
-
----
-
-## 바로드롭 아이폰 앱 — 직접 빌드하기
-
-[English](#barodrop-iphone-app--build-it-yourself) · **한국어**
+**한국어** · [English](#barodrop-iphone-app--build-it-yourself)
 
 아이폰 앱은 앱 스토어에 없습니다. `BaroDrop-iOS.zip`에 Xcode 프로젝트가 들어 있으니 각자 Mac에서 빌드해 아이폰에 설치하세요.
 
@@ -97,5 +46,56 @@ Never share your push key or signing certificate.
 인증기는 새 기기 등록과 밖에서의 접속을 푸시 알림으로 승인합니다. 내 Apple 푸시 키가 필요합니다:
 Apple Developer → **Keys** → **Apple Push Notifications service (APNs)** 키 만들기 → `AuthKey.p8`를 NAS의 `apns` 폴더에 넣고, `.env`에 `APNS_KEY_ID`, `APNS_TEAM_ID`, `APNS_TOPIC`(= 내 Bundle Identifier)을 적은 뒤 NAS 다시 빌드. 앱에서 **설정 → 고급 → 이 아이폰을 인증기로 등록** → NAS 관리자 화면의 QR을 비추기.
 푸시 키와 서명 인증서는 절대 남과 공유하지 마세요.
+
+---
+
+## BaroDrop iPhone app — build it yourself
+
+[한국어](#바로드롭-아이폰-앱--직접-빌드하기) · **English**
+
+The iPhone app is not on the App Store. `BaroDrop-iOS.zip` holds its Xcode project: build it on your Mac and install it on your iPhone.
+
+What the app does: browse your computers (with picture thumbnails), preview and save files to the iPhone, play videos while they arrive, send photos and files to a computer, open the iPhone (its BaroDrop folder and photos) from a computer, and (optionally) approve access from outside as the authenticator.
+
+## You need
+
+- A Mac with **Xcode** (App Store, free). Open it once after installing.
+- An iPhone with **iOS 16** or later, and a USB cable.
+- An **Apple ID**. A free one works, with limits (below). A paid Apple Developer Program membership ($99/year) removes them.
+- **BaroDrop on your NAS, version 1.4 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
+
+| | Free Apple ID | Paid developer account |
+|---|---|---|
+| Browse, receive, send, open the iPhone from a computer | ✅ | ✅ |
+| App keeps working | 7 days, then build and install again | 1 year |
+| Authenticator push notifications | ❌ | ✅ (with your own push key on the NAS) |
+
+## Build and install
+
+1. Unzip `BaroDrop-iOS.zip` and open `ios/BaroDropAuth.xcodeproj` in Xcode.
+2. Xcode → **Settings → Accounts**: add your Apple ID.
+3. In the left column click **BaroDropAuth** (blue icon) → target **BaroDropAuth** → tab **Signing & Capabilities**:
+   - **Team**: choose your team (your name, "Personal Team" for a free account).
+   - **Bundle Identifier**: change `com.barodrop.auth` to your own unique ID, for example `com.yourname.barodrop`. (The original ID belongs to the author's account and cannot be used.)
+   - **Free Apple ID only**: delete the **Push Notifications** capability (the trash/✕ next to it). Free accounts cannot sign apps with it.
+4. Connect the iPhone with the cable and unlock it. Tap **Trust** if asked. Choose the iPhone at the top of the Xcode window.
+5. On the iPhone, turn on **Settings → Privacy & Security → Developer Mode** (it appears after the iPhone is connected to Xcode once) and restart when asked.
+6. Press **▶ (Run)** in Xcode. The first build takes a few minutes.
+7. If the iPhone says "Untrusted Developer": **Settings → General → VPN & Device Management** → your Apple ID → **Trust**. Then open the app.
+
+With a free Apple ID, repeat step 6 every 7 days (when the app stops opening).
+
+## First use
+
+1. Tab **Browse**: enter your BaroDrop address (the same address you open in the browser on your computers).
+2. **＋ Add computer** → on the computer: agent settings (tray / menu bar icon) → **Make a pairing code** → enter the 8-character code on the iPhone → approve on the computer.
+3. Tap **Connect** next to the computer. Allow **Local Network** when asked (direct link on the same Wi-Fi).
+4. Send to a computer: open the folder on the computer, then **＋ Send from iPhone**. Open the iPhone from a computer: keep the app open; it appears in **My devices** on the computer as "iPhone · app open".
+
+## Authenticator (optional, paid account)
+
+The authenticator approves new devices and access from outside, with a push notification. It needs your own Apple push key:
+Apple Developer → **Keys** → new key with **Apple Push Notifications service (APNs)** → put `AuthKey.p8` in the NAS's `apns` folder and set `APNS_KEY_ID`, `APNS_TEAM_ID` and `APNS_TOPIC` (= your Bundle Identifier) in `.env`, then rebuild the NAS. In the app: **Settings → Advanced → Use this iPhone as the authenticator**, and scan the QR from the NAS admin page.
+Never share your push key or signing certificate.
 
 Made by Hanidayo · Built with Claude

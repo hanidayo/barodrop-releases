@@ -1,43 +1,6 @@
-# BaroDrop Android app
+# 바로드롭 안드로이드 앱
 
-**English** · [한국어](#바로드롭-안드로이드-앱)
-
-The Android app is not on Google Play. Download **`BaroDrop-Android.apk`** from the [latest release](https://github.com/hanidayo/barodrop-releases/releases/latest) and install it on your phone. No account is needed.
-
-What the app does: two panes like on a computer (the phone and the computer; long-press a file and drag it to the other pane to copy it), browse your computers (with thumbnails), preview files and save them to the phone (`Download/BaroDrop`), send photos and files to a computer (also from other apps' Share button), and let a computer open the phone (its BaroDrop folder and the internal storage).
-
-## You need
-
-- An Android phone or tablet with **Android 10** or later.
-- **BaroDrop on your NAS, version 1.7 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
-
-## Install
-
-1. On the phone, open the [latest release](https://github.com/hanidayo/barodrop-releases/releases/latest) and tap **BaroDrop-Android.apk** (or download it on a computer and copy it to the phone).
-2. Open the downloaded file. When asked, allow your browser / file app to **install unknown apps**, then tap **Install**.
-3. If Google Play Protect warns about an unknown developer, tap **More details → Install anyway** (the app is not on Google Play).
-
-Updates: install the newer `BaroDrop-Android.apk` over the old one. All releases are signed with the same key, so your settings stay.
-
-## First use
-
-1. Enter your BaroDrop address (the same address you open in the browser on your computers).
-2. Allow **All files access** when asked (to save to `Download/BaroDrop` and to let your computers open the internal storage). You can do it later in the page's ⚙ → **Allow file access**.
-3. **＋** (add computer) → on the computer: agent settings → **Make a pairing code** → enter the 8-character code on the phone → approve on the computer.
-4. Tap **Connect** next to the computer.
-
-## Good to know
-
-- The authenticator (approving access from outside) is in the iPhone app only.
-- Videos are downloaded first and then open in the phone's player (streaming while they arrive is iPhone-only for now).
-- With Tailscale on the phone and the computer, they connect directly from anywhere. When a direct connection is blocked, BaroDrop uses your NAS relay.
-- Build it yourself (optional): `BaroDrop-Android.zip` holds the Android Studio project. Open its `android` folder in Android Studio and use **Build → Build APK(s)**. An APK you build is signed with your computer's key, so uninstall the downloaded app before installing it.
-
----
-
-## 바로드롭 안드로이드 앱
-
-[English](#barodrop-android-app) · **한국어**
+**한국어** · [English](#barodrop-android-app)
 
 안드로이드 앱은 Google Play에 없습니다. [최신 릴리스](https://github.com/hanidayo/barodrop-releases/releases/latest)에서 **`BaroDrop-Android.apk`**를 받아 휴대폰에 설치하세요. 계정은 필요 없습니다.
 
@@ -69,5 +32,42 @@ Updates: install the newer `BaroDrop-Android.apk` over the old one. All releases
 - 영상은 다 받은 뒤 휴대폰 플레이어로 열립니다(받으면서 바로 재생은 지금은 아이폰만).
 - 휴대폰과 컴퓨터에 Tailscale을 켜 두면 어디서든 직접 연결됩니다. 직접 연결이 막히면 NAS 중계로 연결됩니다.
 - 직접 빌드(선택): `BaroDrop-Android.zip`에 Android Studio 프로젝트가 있습니다. `android` 폴더를 Android Studio로 열고 **Build → Build APK(s)**. 직접 빌드한 APK는 그 컴퓨터의 키로 서명되므로, 받은 앱을 지운 뒤 설치하세요.
+
+---
+
+## BaroDrop Android app
+
+[한국어](#바로드롭-안드로이드-앱) · **English**
+
+The Android app is not on Google Play. Download **`BaroDrop-Android.apk`** from the [latest release](https://github.com/hanidayo/barodrop-releases/releases/latest) and install it on your phone. No account is needed.
+
+What the app does: two panes like on a computer (the phone and the computer; long-press a file and drag it to the other pane to copy it), browse your computers (with thumbnails), preview files and save them to the phone (`Download/BaroDrop`), send photos and files to a computer (also from other apps' Share button), and let a computer open the phone (its BaroDrop folder and the internal storage).
+
+## You need
+
+- An Android phone or tablet with **Android 10** or later.
+- **BaroDrop on your NAS, version 1.7 or later** (see [INSTALL-NAS.md](INSTALL-NAS.md)), and the PC agent on your computers.
+
+## Install
+
+1. On the phone, open the [latest release](https://github.com/hanidayo/barodrop-releases/releases/latest) and tap **BaroDrop-Android.apk** (or download it on a computer and copy it to the phone).
+2. Open the downloaded file. When asked, allow your browser / file app to **install unknown apps**, then tap **Install**.
+3. If Google Play Protect warns about an unknown developer, tap **More details → Install anyway** (the app is not on Google Play).
+
+Updates: install the newer `BaroDrop-Android.apk` over the old one. All releases are signed with the same key, so your settings stay.
+
+## First use
+
+1. Enter your BaroDrop address (the same address you open in the browser on your computers).
+2. Allow **All files access** when asked (to save to `Download/BaroDrop` and to let your computers open the internal storage). You can do it later in the page's ⚙ → **Allow file access**.
+3. **＋** (add computer) → on the computer: agent settings → **Make a pairing code** → enter the 8-character code on the phone → approve on the computer.
+4. Tap **Connect** next to the computer.
+
+## Good to know
+
+- The authenticator (approving access from outside) is in the iPhone app only.
+- Videos are downloaded first and then open in the phone's player (streaming while they arrive is iPhone-only for now).
+- With Tailscale on the phone and the computer, they connect directly from anywhere. When a direct connection is blocked, BaroDrop uses your NAS relay.
+- Build it yourself (optional): `BaroDrop-Android.zip` holds the Android Studio project. Open its `android` folder in Android Studio and use **Build → Build APK(s)**. An APK you build is signed with your computer's key, so uninstall the downloaded app before installing it.
 
 Made by Hanidayo · Built with Claude
