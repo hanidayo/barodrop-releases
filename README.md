@@ -22,7 +22,7 @@
 |---|---|
 | Windows 10 / 11 (64비트) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
-| NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) |
+| NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) · 리눅스 서버(도커 + Cloudflare Tunnel): [INSTALL-SERVER.md](INSTALL-SERVER.md) |
 | 아이폰 (iOS 16 이상, Xcode로 직접 빌드) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — 방법: [INSTALL-IOS.md](INSTALL-IOS.md) |
 | 안드로이드 (10 이상) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — 방법: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
@@ -97,7 +97,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 |---|---|
 | Windows 10 / 11 (64-bit) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
-| NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) |
+| NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) · Linux server (Docker + Cloudflare Tunnel): [INSTALL-SERVER.md](INSTALL-SERVER.md) |
 | iPhone (iOS 16+, build it yourself with Xcode) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — how: [INSTALL-IOS.md](INSTALL-IOS.md) |
 | Android (10+) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — how: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
