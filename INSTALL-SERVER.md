@@ -16,6 +16,7 @@
 2. `server.env.example`을 복사해 `.env`로 저장하고 두 줄을 고칩니다.
    - `PUBLIC_URL=https://barodrop.example.com` (터널에 붙일 주소)
    - `SERVER_LAN_IP=192.168.0.20` (이 서버의 집 내부 IP)
+   - (선택) `INVITE_CODE=원하는코드` — 새 기기가 처음 한 번 넣는 초대 코드. 비워 두면 주소만 알면 누구나 기기를 등록할 수 있습니다.
 3. 실행: `docker compose -f compose.server.yaml up -d --build`
 4. 처음 한 번 `docker compose -f compose.server.yaml logs barodrop`에서 **관리자 최초 설정 코드**를 확인합니다.
 
@@ -40,6 +41,8 @@ Cloudflare Zero Trust → Networks → Tunnels → (이 서버의 터널) → **
 
 ## 알아 두기
 
+- 내려받기 화면: `https://(바로드롭 주소)/download` (`/d`로도 열림) — 다른 사람에게 이 주소만 알려 주면 됩니다.
+
 - TURN 서버 없이 동작합니다. 회사망 등에서 직접 연결이 막히면 바로드롭 서버를 거치는 중계로 자동 전환합니다.
 - 집에서 쓰는 기기는 서버와 같은 공인 IP로 들어오므로 집 네트워크로 인정됩니다(`HOME_PUBLIC_IP=auto`).
 - 업데이트: 새 `BaroDrop-NAS.zip`의 파일로 덮어쓰고(`.env`는 그대로) `docker compose -f compose.server.yaml up -d --build`.
@@ -61,7 +64,7 @@ Run the BaroDrop server on a Linux mini PC at home (Ubuntu + Docker) instead of 
 ## 1. Files
 
 1. Unzip `BaroDrop-NAS.zip` on the server (e.g. `~/barodrop`).
-2. Copy `server.env.example` to `.env` and set `PUBLIC_URL` (the tunnel's address) and `SERVER_LAN_IP` (the server's home address).
+2. Copy `server.env.example` to `.env` and set `PUBLIC_URL` (the tunnel's address) and `SERVER_LAN_IP` (the server's home address). Optional: `INVITE_CODE=…` — new devices enter it once; empty lets anyone with the address register a device.
 3. Start: `docker compose -f compose.server.yaml up -d --build`
 4. Find the **admin setup code** once in `docker compose -f compose.server.yaml logs barodrop`.
 
@@ -79,6 +82,8 @@ Do not put the admin port (8790) on the tunnel; open the admin page at home (or 
 5. Stop BaroDrop on the NAS.
 
 ## Good to know
+
+- Download page: `https://(your address)/download` (also `/d`) — share just this address.
 
 - No TURN server: when a direct link is blocked, BaroDrop relays through this server.
 - Devices at home arrive with the server's own public address and count as home (`HOME_PUBLIC_IP=auto`).

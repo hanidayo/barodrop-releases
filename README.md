@@ -23,7 +23,7 @@
 | Windows 10 / 11 (64비트) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple 칩: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (시놀로지, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — 설치: [INSTALL-NAS.md](INSTALL-NAS.md) · 리눅스 서버(도커 + Cloudflare Tunnel): [INSTALL-SERVER.md](INSTALL-SERVER.md) |
-| 아이폰 (iOS 16 이상, Xcode로 직접 빌드) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — 방법: [INSTALL-IOS.md](INSTALL-IOS.md) |
+| 아이폰 · 아이패드 (iOS 16 이상) | [BaroDrop-iOS.ipa](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.ipa) — Sideloadly로 설치 · 직접 빌드: [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip), [INSTALL-IOS.md](INSTALL-IOS.md) |
 | 안드로이드 (10 이상) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — 방법: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
 `latest.json` 은 앱이 읽는 서명된 업데이트 정보입니다. 받을 필요 없습니다.
@@ -58,7 +58,7 @@
 
 **아이폰 / 안드로이드**
 안드로이드 앱은 Google Play에 없습니다. `BaroDrop-Android.apk`를 받아 휴대폰에서 열면 설치됩니다([INSTALL-ANDROID.md](INSTALL-ANDROID.md)).
-아이폰 앱은 앱 스토어에 없습니다. [INSTALL-IOS.md](INSTALL-IOS.md)대로 Mac의 Xcode와 Apple ID(무료 또는 유료)로 빌드해 설치하세요. 인증기(푸시 승인)는 유료 Apple 개발자 계정과 각자의 푸시 키가 필요합니다.
+아이폰 앱은 앱 스토어에 없습니다. `BaroDrop-iOS.ipa`를 Sideloadly(Mac·Windows)로 내 Apple ID로 서명해 설치하거나, [INSTALL-IOS.md](INSTALL-IOS.md)대로 Xcode로 직접 빌드하세요. 인증기(푸시 승인)는 유료 Apple 개발자 계정과 각자의 푸시 키가 필요합니다.
 
 ## 업데이트
 
@@ -98,7 +98,7 @@ Get the latest version from **[Releases](https://github.com/hanidayo/barodrop-re
 | Windows 10 / 11 (64-bit) | [BaroDropAgent-Windows.exe](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Windows.exe) |
 | Mac (Apple silicon: M1/M2/M3/M4) | [BaroDropAgent-Mac.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDropAgent-Mac.zip) |
 | NAS (Synology, Container Manager) | [BaroDrop-NAS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-NAS.zip) — setup: [INSTALL-NAS.md](INSTALL-NAS.md) · Linux server (Docker + Cloudflare Tunnel): [INSTALL-SERVER.md](INSTALL-SERVER.md) |
-| iPhone (iOS 16+, build it yourself with Xcode) | [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip) — how: [INSTALL-IOS.md](INSTALL-IOS.md) |
+| iPhone · iPad (iOS 16+) | [BaroDrop-iOS.ipa](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.ipa) — install with Sideloadly · build it yourself: [BaroDrop-iOS.zip](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-iOS.zip), [INSTALL-IOS.md](INSTALL-IOS.md) |
 | Android (10+) | [BaroDrop-Android.apk](https://github.com/hanidayo/barodrop-releases/releases/latest/download/BaroDrop-Android.apk) — how: [INSTALL-ANDROID.md](INSTALL-ANDROID.md) |
 
 `latest.json` is the signed update information the app reads. You don't need to download it.
@@ -133,7 +133,7 @@ BaroDrop runs on your own NAS. Download `BaroDrop-NAS.zip`, follow [INSTALL-NAS.
 
 **iPhone / Android**
 The Android app is not on Google Play: download `BaroDrop-Android.apk` and open it on the phone ([INSTALL-ANDROID.md](INSTALL-ANDROID.md)).
-The iPhone app is not on the App Store: build it on a Mac with Xcode and a free or paid Apple ID, following [INSTALL-IOS.md](INSTALL-IOS.md). The authenticator (push approvals) needs a paid Apple developer account and your own push key.
+The iPhone app is not on the App Store: install `BaroDrop-iOS.ipa` with Sideloadly (Mac or Windows) signed with your Apple ID, or build it with Xcode following [INSTALL-IOS.md](INSTALL-IOS.md). The authenticator (push approvals) needs a paid Apple developer account and your own push key.
 
 ## Updates
 

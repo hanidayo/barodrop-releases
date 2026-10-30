@@ -2,7 +2,7 @@
 
 **한국어** · [English](#barodrop-iphone-app--build-it-yourself)
 
-아이폰 앱은 앱 스토어에 없습니다. `BaroDrop-iOS.zip`에 Xcode 프로젝트가 들어 있으니 각자 Mac에서 빌드해 아이폰에 설치하세요. **아이패드에도 같은 앱을 설치**하면 됩니다(앱 1.5부터 아이폰·아이패드를 알아서 구분하고, 아이패드는 컴퓨터처럼 두 칸 화면).
+아이폰 앱은 앱 스토어에 없습니다. **간단한 방법**: 릴리스의 `BaroDrop-iOS.ipa`(서명 전)를 [Sideloadly](https://sideloadly.io)로 내 Apple ID로 서명해 설치합니다(무료 계정은 7일마다 다시 설치). **직접 빌드**: `BaroDrop-iOS.zip`에 Xcode 프로젝트가 들어 있으니 아래대로 Mac에서 빌드해 설치하세요. **아이패드에도 같은 앱을 설치**하면 됩니다(앱 1.5부터 아이폰·아이패드를 알아서 구분하고, 아이패드는 컴퓨터처럼 두 칸 화면).
 
 앱으로 하는 일: 내 컴퓨터 탐색(사진 썸네일), 미리보기·아이폰에 받기, 영상 받으면서 재생, 사진·파일을 컴퓨터로 보내기, 컴퓨터에서 아이폰(바로드롭 폴더·사진) 열기, (선택) 인증기로 밖에서 접속 승인.
 
@@ -53,7 +53,7 @@ Apple Developer → **Keys** → **Apple Push Notifications service (APNs)** 키
 
 [한국어](#바로드롭-아이폰-앱--직접-빌드하기) · **English**
 
-The iPhone app is not on the App Store. `BaroDrop-iOS.zip` holds its Xcode project: build it on your Mac and install it on your iPhone. **Install the same app on an iPad** too (from app 1.5 it tells iPhone and iPad apart; the iPad gets two panes like a computer).
+The iPhone app is not on the App Store. **Easy way**: install the release's unsigned `BaroDrop-iOS.ipa` with [Sideloadly](https://sideloadly.io), signed with your Apple ID (a free account re-installs every 7 days). **Build it yourself**: `BaroDrop-iOS.zip` holds the Xcode project — build it on your Mac as below. **Install the same app on an iPad** too (from app 1.5 it tells iPhone and iPad apart; the iPad gets two panes like a computer).
 
 What the app does: browse your computers (with picture thumbnails), preview and save files to the iPhone, play videos while they arrive, send photos and files to a computer, open the iPhone (its BaroDrop folder and photos) from a computer, and (optionally) approve access from outside as the authenticator.
 
